@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 h1{
     font-size: 50px;
@@ -45,7 +46,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: antiquewhite;
+    background-color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     z-index: 99;
 }
@@ -54,6 +55,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
+
 #nav li{
     list-style: none;
     padding: 0 20px;
@@ -69,7 +71,7 @@ body{
 }
 #nav li a:hover,
 #nav li a.active{
-    color: aqua;
+    color: #FD7272;
 }
 #nav li a:hover::after,
 #nav li a.active::after{
@@ -81,7 +83,13 @@ body{
     bottom: -4px;
     left: 20px;
 }
-
+#ham{
+    display: none;
+    align-items: center;
+}
+#close-nav{
+    display: none;
+}
 /* hero section start */
 #hero{
     background:no-repeat url('https://th.bing.com/th/id/OIP.vEaolieMtXvlwokv2GTTkAAAAA?pid=ImgDet&rs=1');
@@ -95,6 +103,7 @@ body{
     align-items: flex-start;
     justify-content: center;
 }
+
 #hero h4{
     padding-bottom: 15px;
 }
@@ -103,16 +112,22 @@ body{
 }
 #hero button{
     color: black;
-    height: 100px;
-    background:no-repeat url('https://th.bing.com/th/id/OIP.t7KwYz8Hr0L5Jd2UwDh-OQHaDN?pid=ImgDet&rs=1');
-    background-size: cover;
+    font-weight: 600;
+    height: 50px;
+    padding: 15px 50px;
+    border:1.5px solid black;
+    border-radius: 5px;
     background-color: transparent;
-    border: 0;
-    padding: 15px 80px;
     cursor:pointer;
     font-size: 15px;
+    
 }
-
+#hero button:hover{
+    transition: 0.3s ease;
+    background-color: #FD7272;
+    border: 1.5px solid aqua;
+    color: darkcyan;
+}
 /* feature box start */
 #feature img{
     width: 120px;
@@ -146,6 +161,7 @@ body{
 
 .pop-container .pro img{
     width: 200px;
+    border-radius: 20px;
 }
 
 #popProduct{
@@ -212,20 +228,16 @@ body{
 
 #poster{
     width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background:no-repeat url('https://rukminim1.flixcart.com/fk-p-flap/3006/433/image/9f8f3f2b3c0f2691.jpg?q=50');
-    background-size: cover;
+    height: 70vh;
+    background: url('https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/1/70a3d1a4-f16a-45ca-9bb4-64dc2315352b1659297228544-Desktop-Banners_unisex-with-kids.jpg');  
+    background-repeat: no-repeat;
     background-position: center;
-    
+    background-size: 100%;
 }
 #banner{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #banner .box1{
     color: white;
@@ -235,11 +247,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background:no-repeat url('https://images.hdqwalls.com/download/red-dress-girl-flower-bed-4k-cb-1920x1080.jpg');
+    background:no-repeat url('https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=446&q=80');
     background-size: 100%;
     background-size: cover;
     background-position: center;
     padding: 30px;
+    
 }
 #banner .box2{
     background:no-repeat url('https://c.wallhere.com/photos/29/07/abstract_topf25_colors_nikon_edinburgh_tshirt_nikond50_clothes-1105650.jpg!d');
@@ -278,7 +291,7 @@ button.white{
 #saleBanner{
     display: flex;
     justify-content: space-around;
-    padding: 0 80px;
+    padding: 0 50px;
     flex-wrap: wrap;
 }
 #saleBanner .box1,#saleBanner .box2,#saleBanner .box3{
@@ -289,28 +302,28 @@ button.white{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background:no-repeat url('https://wallpapersmug.com/download/1920x1080/7754b4/store-shopping-anime-girl.jpg');
+    background:no-repeat url('https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15654426/2021/10/6/7e0abdfc-0430-46d5-af8b-e34e79ffcbd41633502377365-Computerised-Jacquard-Sweater-6701633502376814-1.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
     margin-bottom: 20px;
 }
 #saleBanner h2{
-    color: white;
+    color: #FD7272;
     font-weight: 900;
     font: 22px;
 }
 #saleBanner h3{
-    color: white;
+    color: black;
     font-weight: 800;
     font-size: 15px;
 }
 #saleBanner .box2{
-    background-image: url('https://wallpapercave.com/wp/qtHXk2l.jpg');
+    background-image: url('https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18979712/2022/7/6/d25b320c-bcb7-46ee-8828-54a8dd0c84291657090858261USPoloAssnMenOffWhitePUSneakers1.jpg');
 }
 #saleBanner .box3{
     color: black;
-    background-image: url('https://th.bing.com/th/id/R.3822294bb579b0ac460d4d80f33ba190?rik=YJ6Y2chHjcRrrA&riu=http%3a%2f%2ffiles.all-free-download.com%2fdownloadfiles%2fwallpapers%2f1920_1080%2fshopping_girl_wallpaper_vector_3d_2.jpg&ehk=aEyGoYOt%2fQ9pQsvMChOIkCs%2bJM0FWLbpELpzALXx5nc%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12221944/2020/8/14/b9fc8ee9-ec92-4557-ab60-000e3779291e1597404329638-SASSAFRAS-Women-White-Solid-Top-8171597404327851-1.jpg');
 }
 
 
@@ -319,9 +332,10 @@ button.white{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(22, 46, 152);
+    background-color: #3B3B98;
     height: 200px;
     color: white;
+    margin-bottom: 100px;
 }
 #contact h4{
     font-size: 23px;
@@ -358,4 +372,217 @@ button.white{
 #contact .contact-form{
     display: flex;
     width: 40%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-sect{
+    margin-left: 10px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-head{
+    font-size: 23px;
+    color: #FD7272;
+    font-weight: 800;
+}
+.footer-sect > *{
+    padding-bottom: 10px;
+}
+.footer-app{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-app h3{
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.app-sect img{
+    width: 150px;
+}
+.pay-img img{
+    width: 60px;
+    padding: 0 2px;
+}
+
+/* media queries */
+@media (max-width:799px){
+    #header{
+        width: 100vw;
+    }
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -500px;
+        height: 100vh;
+        width: 500px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+    }
+    #nav.active{
+        right: 0;
+    }
+    #nav li{
+        margin-bottom: 25px;
+    }
+    #ham{
+        display: flex;
+    }
+    #ham i{
+        color: #1a1a1a;
+        font-size: 30px;
+        padding-left: 24px;
+    }
+    #close-nav{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 25px;
+        color: black;
+        transition: 0.3s ease;
+    }
+    #shop-bag{
+        display: none;
+    }
+    #hero {
+        /* background-size: cover; */
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 5%;
+    }
+    #feature {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #feature .feat {
+      
+        margin: 15px 15px;
+    }
+    #popProduct .pop-container {
+       
+        justify-content: center;
+    }
+    .pop-container .pro {
+        
+        margin: 25px;
+        
+    }
+    #poster {
+        height: 20vh;
+    }
+    #banner{
+      flex-wrap: wrap;  
+    }
+    #banner .box1 {
+        min-width: 100%;
+        height: 30vh;
+        padding: 30px;
+    }
+    #saleBanner {
+        padding: 0 30px;
+    }
+    #saleBanner .box1{
+        width: 28%;
+    }
+}
+@media (max-width:477px) {
+    .section-p1{
+        padding: 20px;
+    }
+    .logo{
+        height: 45px;
+    }
+    #header{
+        padding: 20px 35px;
+    }
+    #hero {
+        background-position:top 25%right -200px;
+        /* background-size: cover; */
+        
+        padding: 0 20px;
+    }
+    #hero h2{
+        font-size: 33px;
+    }
+    #hero h1{
+        font-size: 44px;
+    }
+    #hero button {
+        padding: 15px 40px;
+    
+    }
+    .hero-span{
+        color: white;
+    }
+    .pop-container .pro {
+        margin: 10px;
+    }
+    #poster{
+        background-size: 100% 110px;
+    }
+    #banner{
+        padding: 40px 10px;
+    }
+    #saleBanner{
+        padding: 10px;
+        justify-content: space-between;
+    }
+    #saleBanner .box1{
+        padding: 5px;
+        width: 28%;
+        
+    }
+    #saleBanner h2{
+        font-size: 20px;
+        line-height: 20px;
+        color: #FD7272;
+    }
+    #saleBanner h3{
+        color: black;
+    }
+    #feature .feat {
+        width: 155px; 
+        margin: 10px 0px;
+    }
+    #contact input {
+        width: 200px; 
+    }
+    footer{
+        padding: 0 7px;
+    }
+    .footer-head {
+        font-size: 17px;
+    }
+    .footer-sect h3{
+        font-size: 15px;
+    }
+    .payment-gate p{
+        font-size: 10px;
+    }
+    .pay-img img{
+        width: 40px;
+    }
 }
